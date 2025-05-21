@@ -48,7 +48,7 @@ nav li:first-child{
     margin-left: 0.5cm;
 }
 
-.sideBar{
+.sidebar{
     position: fixed;
     top: 0;
     right: 0;
@@ -64,10 +64,29 @@ nav li:first-child{
     justify-content: flex-start;
 }
 
-.sideBar li{
+.sidebar li{
     width: 100%;
 }
 
-.sideBar a{
+.sidebar a{
     width: 100%;
+}
+
+.menu-button{
+    display: none;
+}
+
+@media (max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+
+@media (max-width: 430px){
+    .sidebar{
+        width: 100%;
+    }
 }
