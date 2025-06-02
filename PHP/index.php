@@ -1,3 +1,9 @@
+<?php 
+session_start();
+include("../PHP/connect.php")
+?>
+
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -9,8 +15,10 @@
     <title>Document</title>
 </head>
 <body>
-
+   
     <?php include '../PARTICLE/header.php' ?>
+
+
 
  <section class="container" >
     <article class="slider-wrapper">
@@ -30,13 +38,5 @@
  
     <?php include '../PARTICLE/footer.php' ?>
 
-
-
-
-
-
-
-
-    
 </body>
 </html>
