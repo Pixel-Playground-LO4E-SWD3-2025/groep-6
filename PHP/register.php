@@ -12,7 +12,7 @@ if(isset($_POST['signUp'])){
      $checkEmail="SELECT * From users where email='$email'";
      $result=$conn->query($checkEmail);
      if($result->num_rows>0){
-        echo "Email Address Already Exists !";
+        echo "Email Address Already Exists!";
      }
      else{
         $insertQuery="INSERT INTO users(firstName,lastName,email,password)
